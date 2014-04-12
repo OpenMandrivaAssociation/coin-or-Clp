@@ -1,0 +1,21 @@
+diff -up Clp-1.15.3/Makefile.in.orig Clp-1.15.3/Makefile.in
+--- Clp-1.15.3/Makefile.in.orig	2013-11-01 13:42:29.496647532 -0200
++++ Clp-1.15.3/Makefile.in	2013-11-01 13:42:58.356648637 -0200
+@@ -401,7 +401,7 @@ EXTRA_DIST = doc/authors.xml doc/basicmo
+ ########################################################################
+ pkgconfiglibdir = $(libdir)/pkgconfig
+ pkgconfiglib_DATA = clp.pc $(am__append_2)
+-addlibsdir = $(DESTDIR)$(datadir)/coin/doc/Clp
++addlibsdir = $(DESTDIR)$(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ 
+ ########################################################################
+ #                         Maintainer Stuff                             #
+@@ -411,7 +411,7 @@ CLEANFILES =
+ # Files that are generated and should be cleaned with make distclean
+ DISTCLEANFILES = $(am__append_4) $(VPATH_DISTCLEANFILES)
+ DocFiles = README AUTHORS LICENSE
+-DocInstallDir = $(datadir)/coin/doc/$(PACKAGE_NAME)
++DocInstallDir = $(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ all: all-recursive
+ 
+ .SUFFIXES:
